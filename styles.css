@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+  
+}
+span{
+    color: white;
+    font-family: 'ui-regu';
+}
+
+@font-face {
+    font-family: 'ui-bold';
+    src: url('font/MixUI-Bold.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'ui-regu';
+    src: url('font/MixUI-Regular.woff2') format('woff2')
+}
+@font-face {
+    font-family: 'uititle-bold';
+    src: url('font/MixUITitle-Bold.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'uititle-extarbold';
+    src: url('font/MixUITitle-Extrabold.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'uititle-variable';
+    src: url('font/MixUITitleVariable.woff2') format('woff2')
+}
+.headerBlock{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    height: 56px;
+    background: black;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+
+}
+.headerBlock_elm1{
+    display: flex;
+    align-items: center;
+    right: 0;
+}
+.headerBlock_elm{
+    background: black;
+    left: 0;
+}
+.headerBlock_elm svg{
+    fill:white;
+}
+.headerBlock_elm1-search{
+    padding-inline: 16px;
+}
+.headerBlock_elm1-search svg{
+    height: 16px;
+    width: 16px;
+    fill: white;
+}
+.headerBlock_elm1-menu{
+    width: 40px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.headerBlock_elm1-menu svg{
+    fill: white;
+    height: 24px;
+    width:24px;
+}
+.headerBlock_elm1-b button{
+    border: none;
+    background:white;
+    color:black;
+    padding: 4px 16px;
+    border-radius: 9999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+.headerBlock_elm1-b button span{
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-family: 'uititle-bold';
+    color: black;
+}
+.ArtistBlock{
+    background: #212121;
+    padding-left: 16px;
+}
+
+.ArtistBlockFlex{
+    display: flex;
+    overflow: auto;
+}
+.ArtistBlockFlex::-webkit-scrollbar{
+    display: none;
+}
+.ArtistBlock-item{
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.ArtistBlock-item:first-child{
+    padding-left: 0;
+}
+.ArtistBlock-item img{
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 4px;
+    min-inline-size: 152px;
+    inline-size: 100%;
+}
+.ArtistBlock-item span{
+    color: white;
+    /* text-wrap: nowrap; */
+}
+h2{
+    color: white;
+    font-family: 'uititle-variable';
+    font-family: 400;
+}
+.ArtistBlock_head h2{
+    font-size: 20px;
+    padding-top: 80px;
+    margin-bottom: 12px;
+}
+/* ??????????? */
+#Albums h2{
+    padding-top: 24px;
+}
+/* /////////////////// */
+footer{
+    background: #212121;
+    color: white;
+    padding: 8px 16px 40px;
+}
+.footer_elm{
+    padding-top: 32px;
+}
+.footer_content{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+.footer_content p{
+    font-family:'ui-bold' ;
+    padding-bottom: 8px;
+}
+.footer_content a{
+    font-family:'ui-regu' ;
+    margin-bottom: 8px;
+    color:#cfced0;
+}
+.footer_social {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+.footer_social svg{
+    width: 16px;
+    height: 16px;
+    fill: white;
+}
+.social{
+    width: 40px;
+    height: 40px;
+    background: #292929;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 200px;
+}
+.footer_last{
+    padding-top: 36px;
+    border-top: 1px solid grey;
+}
+.footer_last-elm1{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.footer_last-elm{
+    font-family:'ui-regu' ;
+    font-size: 14px;
+}
+.footer_last-elm a{
+    margin-bottom: 8px;
+    margin-right: 16px;
+    color:#cfced0;
+    margin-top: 2px;
+}
+.footerB{
+    padding-top: 16px;
+}
+.footerB-elm{
+    display:flex;
+    padding: 3px 15px 3px 13px;
+    height: 32px;
+    width: 92.64px;
+    border: 1px solid white;
+    border-radius: 200px;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+.footerB-elm svg{
+    fill: white;
+    height: 16px;
+}
+.footerB-elm p{
+    font-family:'uititle-bold';
+}
+@media screen and (min-width:768px){
+    .footer_elmflex{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer_content{
+        width: 40%;
+        margin-right: 24px;
+        margin-bottom: 32px;
+    }
+}
