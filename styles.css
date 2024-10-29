@@ -4,10 +4,12 @@
   
 }
 span{
-    color: white;
+    color:white;
     font-family: 'ui-regu';
 }
-
+svg{
+    fill: white;
+}
 @font-face {
     font-family: 'ui-bold';
     src: url('font/MixUI-Bold.woff2') format('woff2');
@@ -135,7 +137,7 @@ h2{
 }
 /* /////////////////// */
 footer{
-    background: #212121;
+    background: #121111;
     color: white;
     padding: 8px 16px 40px;
 }
@@ -215,6 +217,19 @@ footer{
 .footerB-elm p{
     font-family:'uititle-bold';
 }
+.headerBlock_elm12024{
+    display: none;
+}
+.homebottons{
+    display: none;
+}
+.sign{
+    display: none;
+}
+.log{
+    display:none
+}
+
 @media screen and (min-width:768px){
     .footer_elmflex{
         display: flex;
@@ -226,3 +241,179 @@ footer{
         margin-bottom: 32px;
     }
 }
+@media screen and (min-width:1024px){
+    .headerBlock_elm1{
+        display: none;
+    }
+    .headerBlock_elm12024{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 8px;
+
+    }
+    .home{
+        height: 48px;
+        width:54px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 200px;
+        background: #1f1f1f;
+    }
+    .home svg{
+        fill: white;
+        width: 26px;
+        height: 23.89px;
+    }
+    .absolutrBlock{
+       display: flex;
+       max-width: 546px;
+       min-width: 350px;
+       width: 50%;
+       align-items: center;
+       gap: 8px;
+       padding-right: 16px;
+       min-width: 512px;
+       
+
+    }
+    .headerBlock{
+        align-items: center;
+    }
+    .searchBox{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        /* padding: 12px 64px 12px 48px; */
+        background: #1f1f1f;
+        border-radius: 200px;
+        height: 48px;
+        padding-right: 16px;
+    }
+    .searchBox-elm{
+        display: flex;
+        align-items: center;
+    }
+    .searchBox-elm svg{
+        height: 48px;
+        width: 48px;
+        padding: 0 12px;
+    }
+    .searchBox-elm2 svg{
+        height: 24px;
+        width: 24px;
+    }
+    .searchBox-elm2{
+        display: flex;
+        width: 37px ;
+        justify-content: flex-end;
+        border-left: 1px solid grey;
+    }
+    .homebottons{
+        right: 0;
+    }
+    .sign{
+        display: inline;
+        color: white;
+        background: transparent;
+        border: none;
+        font-family: 'ui-bold';
+        padding-right: 26px;
+    }
+    .sign span{
+        font-family: 'ui-bold';
+        font-size: 16px;
+    }
+    .log{
+        display: inline;
+        padding: 8px 29px;
+        border-radius: 200px;
+        width: 112.3px;
+        height: 52px;
+    }
+    .log span{
+        color: black;
+        font-family: 'ui-bold';
+        padding: 4px 0;
+        font-size: 16px;
+
+    }
+    .headerBlock{
+        height: 64px;
+        padding-right: 6px;
+        padding-left: 8px;
+    } 
+    .headerBlock_elm{
+        height: 30px;
+        width: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* //////////////////////////////////////// */
+    #customsec{
+
+        background: #121111;
+        width: 350px;
+        border-top: 1px solid white;
+    }
+    .customBlock_library svg{
+        width: 24px;
+        height: 24px;
+    }
+    .customBlock_add{
+        width: 16px;
+        height: 16px;
+    }
+    .customBlock_library{
+        display: flex;
+        align-items: center;
+        padding: 4px 8px;
+        gap: 10px;
+    }
+    .customBlock_elm1{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 16px 8px;
+    }
+    .customBlock_elm{
+        height: 76px;
+    }
+    .playlist_elm1 P{
+        color: white;
+        font-family: 'ui-bold';
+    }
+    .playlist_elm1 span{
+        font-size: 14px;
+    }
+    .playlist_elm2 span{
+        color: black;
+        font-family: 'ui-bold';
+        padding: 4px 16px;
+    }
+    .playlist_elm button{
+        border-radius: 200px;
+        background: white;
+        height: 32px;
+    }
+    .playlist{
+        padding: 0 8px 8px;
+    }
+    .playlist_elm{
+        padding: 16px 20px;
+        margin: 8px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .playlist_elm1{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+}   
